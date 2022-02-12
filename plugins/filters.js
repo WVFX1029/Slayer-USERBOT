@@ -114,13 +114,13 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '919645628728@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./sourav/music.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+        if (!!message.mention && message.mention[0] == '918606413490@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./sourav/wvfx.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.AFNN) {
 await message.client.sendMessage(message.jid, fs.readFileSync('./sourav/music.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
-const array = ['Ayin','Ayinu','Bgm','Bot','Bye','Da','Good night','Hello','Hi','Neymar','Pm','Sed','alive','assist','ban','bgm','bot','converting','fake','fork','fuck','music','myre','njan','number','oombi','para','poda','raganork','remove','reply','sed','subscribe','umma','xxxtentation']
+const array = ['Ayin','Ayinu','Bgm','Bot','Bye','Da','Good night','Hello','Hi','Neymar','Pm','Sed','alive','assist','ban','bgm','bot','converting','fake','fork','fuck','music','myre','njan','number','oombi','para','poda','raganork','remove','reply','sed','subscribe','umma','xxxtentation','wvfx']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
